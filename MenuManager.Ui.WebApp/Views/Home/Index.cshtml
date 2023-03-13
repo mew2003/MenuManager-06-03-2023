@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<section>
+    @{
+        var product = new Product
+        {
+            Id = 1,
+            Name= "Cola Zero",
+            Price = 5,
+            Description = "A Coca Cola or other brand.",
+            CreatedDate = DateTime.UtcNow
+        };
+
+        <partial name="ProductPartial" model="product"/>
+    }
+</section>
